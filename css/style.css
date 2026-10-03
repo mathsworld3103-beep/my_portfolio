@@ -491,6 +491,469 @@
         color:var(--muted);
         font-size:14px;
     }
+    
+/* =========================================================
+   CONTACT SECTION — DARK THEME
+========================================================= */
+
+#contact {
+    padding: 120px 0;
+    position: relative;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+#contact .section-head {
+    max-width: 700px;
+    margin-bottom: 55px;
+}
+
+#contact .label {
+    margin-bottom: 15px;
+
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #FFD400;
+}
+
+#contact .section-head h2 {
+    margin: 0 0 15px;
+
+    color: #ffffff;
+
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.05;
+    font-weight: 700;
+
+    letter-spacing: -2px;
+}
+
+#contact .section-head p {
+    margin: 0;
+
+    color: #9ca3af;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTACT GRID
+========================================================= */
+
+.contact {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CONTACT CARDS
+========================================================= */
+
+#contact .card {
+    padding: 35px;
+
+    background: #111111;
+
+    border: 1px solid #292929;
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#contact .card:hover {
+    border-color: #3a3a3a;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION
+========================================================= */
+
+#contact .card h3 {
+    margin: 0 0 35px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#contact .mono {
+    font-family: "Courier New", monospace;
+}
+
+
+/* =========================================================
+   CONTACT LIST
+========================================================= */
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding-bottom: 22px;
+
+    color: #d1d5db;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    border-bottom: 1px solid #292929;
+}
+
+.contact-item:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+}
+
+
+/* Contact labels */
+
+.contact-item small {
+    font-family: "Courier New", monospace;
+
+    color: #6b7280;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Contact links */
+
+.contact-item a {
+    width: fit-content;
+
+    color: #e5e7eb;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.contact-item a:hover {
+    color: #FFD400;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+#contact .form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+#contact .form input,
+#contact .form textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 16px 18px;
+
+    background: #181818;
+
+    border: 1px solid #303030;
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Placeholder */
+
+#contact .form input::placeholder,
+#contact .form textarea::placeholder {
+    color: #6b7280;
+}
+
+
+/* Focus */
+
+#contact .form input:focus,
+#contact .form textarea:focus {
+    background: #1c1c1c;
+
+    border-color: #FFD400;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 212, 0, 0.08);
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+#contact .form textarea {
+    min-height: 170px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SEND BUTTON
+========================================================= */
+
+#contact .btn-primary {
+    width: 100%;
+
+    padding: 16px 22px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #FFD400;
+    color: #000000;
+
+    font-family: inherit;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Hover */
+
+#contact .btn-primary:hover {
+    background: #ffffff;
+    color: #000000;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(255, 212, 0, 0.18);
+}
+
+
+/* Click */
+
+#contact .btn-primary:active {
+    transform: translateY(0);
+}
+
+
+/* Disabled */
+
+#contact .btn-primary:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   FORM STATUS
+========================================================= */
+
+#formStatus {
+    display: block;
+
+    min-height: 20px;
+
+    margin-top: 2px;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    #contact {
+        padding: 90px 0;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    #contact .card {
+        padding: 30px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    #contact {
+        padding: 70px 0;
+    }
+
+    #contact .section-head {
+        margin-bottom: 35px;
+    }
+
+    #contact .section-head h2 {
+        font-size: 38px;
+
+        letter-spacing: -1.5px;
+    }
+
+    #contact .section-head p {
+        font-size: 14px;
+    }
+
+    #contact .card {
+        padding: 23px;
+
+        border-radius: 15px;
+    }
+
+    #contact .card h3 {
+        margin-bottom: 28px;
+
+        font-size: 18px;
+    }
+
+    .contact-list {
+        gap: 22px;
+    }
+
+    .contact-item {
+        gap: 5px;
+
+        padding-bottom: 18px;
+    }
+
+    .contact-item a {
+        font-size: 14px;
+
+        word-break: break-word;
+    }
+
+    #contact .form {
+        gap: 14px;
+    }
+
+    #contact .form input,
+    #contact .form textarea {
+        padding: 14px;
+
+        font-size: 14px;
+    }
+
+    #contact .form textarea {
+        min-height: 140px;
+    }
+
+    #contact .btn-primary {
+        padding: 14px 18px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    #contact .section-head h2 {
+        font-size: 32px;
+    }
+
+    #contact .card {
+        padding: 18px;
+    }
+}
+
 
 
     footer{
