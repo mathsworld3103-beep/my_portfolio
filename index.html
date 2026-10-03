@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="J. Abishek — Software Developer Portfolio">
+  <title>J. Abishek | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a class="brand" href="#home">ABISHEK<span>.dev</span></a>
+    <div class="links">
+      <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#process">Process</a><a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions"><button class="icon-btn" id="cmdBtn" title="Command palette">⌘</button><button class="menu-btn" id="menuBtn">☰</button></div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow mono">Software Developer / Full-Stack</div>
+          <h1>Build. <span>Ship.</span><br>Improve.</h1>
+          <p>I’m J. Abishek, a software developer focused on building useful, responsive and maintainable web applications.</p>
+          <div class="buttons">
+            <a class="btn btn-primary" href="#projects">View Projects →</a>
+            <a class="btn btn-secondary" href="./pdf/Abishek_CV.pdf" download>Download CV</a></div>
+          <div class="status"><i class="dot"></i> Open to software development opportunities</div>
+        </div>
+        <div class="terminal reveal">
+          <div class="term-top"><i class="circle"></i><i class="circle"></i><i class="circle"></i></div>
+          <div class="term-body">
+            <div><span class="prompt">$</span> whoami</div>
+            <div>J. Abishek</div><br>
+            <div><span class="prompt">$</span> cat developer.json</div>
+            <div>{</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"role"</span>: <span class="code-val">"Software Developer"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"focus"</span>: <span class="code-val">"Full Stack Web"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"stack"</span>: <span class="code-val">["PHP","JS","MySQL","React"]</span>,</div>
+            <div>&nbsp;&nbsp;<span class="code-key">"mindset"</span>: <span class="code-val">"Build & Learn"</span></div>
+            <div>}</div><br>
+            <div><span class="prompt">$</span> <span class="cursor">_</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container reveal">
+        <div class="section-head"><div class="label">01 / about</div><h2>Developer, learner, builder.</h2><p>A portfolio that explains not only what I know, but what I build and how I approach software.</p></div>
+        <div class="about-grid">
+          <div class="card"><h3>About Me</h3><p style="color:var(--muted);margin-top:12px">I enjoy turning ideas into practical digital products. My work combines frontend interfaces, backend logic, databases and deployment workflows.</p><p style="color:var(--muted);margin-top:12px">Currently focused on improving full-stack development, UI engineering and real-world application architecture.</p></div>
+          <div class="card code-card"><span class="kw">const</span> developer = {<br>&nbsp;&nbsp;<span class="key">name</span>: <span class="str">"J. Abishek"</span>,<br>&nbsp;&nbsp;<span class="key">role</span>: <span class="str">"Software Developer"</span>,<br>&nbsp;&nbsp;<span class="key">interests</span>: [<span class="str">"Web"</span>, <span class="str">"UI"</span>, <span class="str">"Databases"</span>],<br>&nbsp;&nbsp;<span class="key">currentlyLearning</span>: [<span class="str">"React"</span>, <span class="str">"Node.js"</span>, <span class="str">"Cloud"</span>]<br>};</div>
+        </div>
+        <div class="stats"><div class="stat"><strong>12+</strong><span>Projects / prototypes</span></div><div class="stat"><strong>10+</strong><span>Technologies explored</span></div><div class="stat"><strong>3+</strong><span>Years learning & building</span></div><div class="stat"><strong>∞</strong><span>Things to learn</span></div></div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container reveal">
+        <div class="section-head"><div class="label">02 / tech stack</div><h2>Tools I build with.</h2><p>Grouped by the role each technology plays in my projects.</p></div>
+        <div class="skills">
+          <div class="skill"><h3>Frontend</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span class="tag">React</span></div></div>
+          <div class="skill"><h3>Backend</h3><div class="tags"><span class="tag">PHP</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">REST APIs</span></div></div>
+          <div class="skill"><h3>Database</h3><div class="tags"><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">SQL</span></div></div>
+          <div class="skill"><h3>Tools</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Figma</span><span class="tag">XAMPP</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container reveal">
+        <div class="section-head">
+          <div class="label">03 / projects</div>
+          <h2>Things I’ve built.</h2>
+          <p>Real projects are the strongest proof of how I work.</p>
+        </div>
+
+        <div class="projects">
+          <article class="card project">
+            <div class="project-cover">
+              <img src="./images/mathsworld_project.png" alt="MathsWorld LMS">
+            </div>
+            <div class="project-body">
+              <h3>MathsWorld LMS</h3>
+              <p>Education platform for learning materials, past papers, model papers, authentication and admin management.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links" style="margin-top:18px">
+                <a href="https://maths-khaki.vercel.app/">Live Demo ↗</a>
+                <a href="https://github.com/mathskhaki/mathsworld">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="project-cover">
+              <span>SOBA</span>
+            </div>
+            <div class="project-body">
+              <h3>Soba Fashion</h3>
+              <p>Business website concept for tailoring, Aari work, handmade jewellery and dress collections.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">PHP</span>
+              </div>
+              <div class="project-links" style="margin-top:18px">
+                <a href="#">Live Demo ↗</a>
+                <a href="#">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="project-cover">
+              <img src="./images/portfolio_project.png" alt="Developer OS">
+            </div>
+            <div class="project-body">
+              <h3>Developer OS</h3>
+              <p>Interactive developer portfolio with terminal UI, command palette, responsive design and animated sections.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links" style="margin-top:18px">
+                <a href="#home">Preview ↗</a>
+                <a href="#">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container reveal">
+        <div class="section-head"><div class="label">04 / workflow</div><h2>How I build software.</h2><p>From an idea to a usable product.</p></div>
+        <div class="process"><div class="step"><b>01</b><small>Understand</small></div><div class="arrow">→</div><div class="step"><b>02</b><small>Plan</small></div><div class="arrow">→</div><div class="step"><b>03</b><small>Design</small></div><div class="arrow">→</div><div class="step"><b>04</b><small>Develop</small></div></div>
+        <div class="process" style="margin-top:10px"><div class="step"><b>05</b><small>Test</small></div><div class="arrow">→</div><div class="step"><b>06</b><small>Deploy</small></div><div class="arrow">→</div><div class="step"><b>07</b><small>Improve</small></div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container reveal">
+        <div class="section-head"><div class="label">05 / github</div><h2>Code in progress.</h2><p>A visual placeholder for your GitHub activity. Connect the GitHub API later for live data.</p></div>
+        <div class="github"><div class="card"><h3>GitHub snapshot</h3><p style="color:var(--muted);margin-top:8px">Repositories, experiments and learning projects all in one place.</p><div class="buttons"><a class="btn btn-secondary" href="https://github.com/" target="_blank">Open GitHub ↗</a></div></div><div class="card"><div class="mono" style="font-size:12px;color:var(--muted)">CONTRIBUTION ACTIVITY</div><div class="contrib" id="contrib"></div></div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container reveal">
+        <div class="section-head"><div class="label">06 / journey</div><h2>Learning timeline.</h2></div>
+        <div class="card timeline">
+          <div class="event"><small>2026</small><h3>Full-Stack Web Development</h3><p>Building PHP/MySQL applications, authentication systems, admin dashboards and deployment workflows.</p></div>
+          <div class="event"><small>2025 — 2026</small><h3>Modern Web Development</h3><p>Strengthening JavaScript, responsive UI, Git/GitHub and API-based development.</p></div>
+          <div class="event"><small>Ongoing</small><h3>Next: React, Node.js & Cloud</h3><p>Continuing to learn modern application architecture and deployment.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+
+    <div class="container reveal">
+
+        <div class="section-head">
+
+            <div class="label">
+                07 / contact
+            </div>
+
+            <h2>
+                Let’s build something.
+            </h2>
+
+            <p>
+                Use the form below or connect through your preferred platform.
+            </p>
+
+        </div>
+
+
+        <div class="contact">
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="card">
+
+                <h3 class="mono">
+                    ~/contact
+                </h3>
+
+                <div class="contact-list">
+
+                    <div class="contact-item">
+
+                        <small>
+                            Email
+                        </small>
+
+                        <a href="mailto:mathsworld3103@gmail.com">
+                            mathsworld3103@gmail.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <small>
+                            GitHub
+                        </small>
+
+                        <a
+                            href="https://github.com/mathsworld3103-beep"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            github.com/mathsworld3103-beep
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <small>
+                            Location
+                        </small>
+
+                        Sri Lanka
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <form class="card form" id="contactForm">
+
+              <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="Your name"
+              >
+
+              <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Your email"
+              >
+
+              <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Tell me about your project..."
+              ></textarea>
+
+              <button
+                  class="btn btn-primary"
+                  type="submit"
+                  id="sendButton"
+              >
+                  Send Message →
+              </button>
+
+              <small id="formStatus"></small>
+
+          </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 J. Abishek.</div>
+      <div class="social">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/abishek31-j" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="palette" id="palette"><div class="palette-box"><input id="commandSearch" placeholder="Search portfolio or type a command..."><div class="command" data-go="#home">⌂ &nbsp; Go to Home</div><div class="command" data-go="#projects">▣ &nbsp; View Projects</div><div class="command" data-go="#skills">⚡ &nbsp; View Skills</div><div class="command" data-go="#contact">✉ &nbsp; Contact</div><div class="command" data-go="#about">{} &nbsp; About Developer</div></div></div>
+
+  <script src="./main.js"></script>
+  <script src="./js/contact.js"></script>
+</body>
+</html>
